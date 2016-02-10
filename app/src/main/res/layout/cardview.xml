@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    android:layout_height="match_parent"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dcdcdc">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="120px"
+            android:layout_height="160px"
+            android:layout_marginLeft="4px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="4px"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@+id/label"
+            android:layout_marginLeft="10px"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@+id/label"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="20px"
+            android:textSize="20px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/menu_list"
+        android:src="@drawable/ic_menu_moreoverflow"
+        android:layout_marginRight="10dp"
+        android:layout_height="25dp"
+        android:layout_width="25dp"/>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
